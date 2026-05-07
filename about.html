@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    background:url('white.jpg') center/cover no-repeat;
+    min-height:100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    width:100%;
+    background:#8b0000;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:5px solid white;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    font-family:Georgia, serif;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+}
+
+.nav-links li{
+    margin-left:40px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ddd;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:70px 20px;
+}
+
+.about-box{
+    width:80%;
+    max-width:1000px;
+    background:#f2f2f2;
+    padding:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.left{
+    width:40%;
+}
+
+.h1 {
+  width: 500px; /* Set your design width */
+  height: 100px; /* Set your design height */
+  overflow: hidden;
+}
+
+h1 img {
+  width: 100%;
+  height: 100%;
+  /* 'cover' fills the area and crops edges; 'contain' fits the whole image inside */
+  object-fit: cover; 
+
+}
+
+.right{
+    width:45%;
+    text-align:center;
+    color:black;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.social{
+    margin-top:30px;
+}
+
+.social i{
+    margin:0 10px;
+    color:#111;
+    font-size:23px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social i:hover{
+    color:#777;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .nav-links li{
+        margin:10px 15px;
+    }
+
+    .about-box{
+        flex-direction:column;
+        text-align:center;
+        padding:40px 25px;
+    }
+
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .left h1{
+        margin-bottom:30px;
+        font-size:45px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">About Me</div>
+
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Diary</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+</nav>
+
+<!-- ABOUT SECTION -->
+
+<div class="container">
+
+    <div class="about-box">
+
+        <div class="left">
+            <h1>
+  <img src="bike.jpg" alt="Bike">
+</h1>
+        </div>
+
+        <div class="right">
+            <p style="font-size: 22px;">𝕸𝖆𝖗𝖈𝖐𝖎𝖊 𝕽. 𝕾𝖆𝖑𝖚𝖉𝖊𝖘</p>
+<p>|</p>
+		<p>My hobbies are Cycling, Fixing hardware specially car engine, and travelling.</p>
+<p>|</p>
+
+			<p>My dream was always to become a mechanical engineer, but God gave me the opportunity to take a different path in Information Technology. Maybe this is not the road I planned, but I believe it is part of His greater purpose for me. As the quote says, ‘God’s plans are always more beautiful than our dreams.</p>
+
+
+            <div class="social">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

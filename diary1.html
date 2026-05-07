@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Diary</title>
+
+<style>
+:root{
+    --main-color:#6b0000;
+    --card-color:#d9d9d9;
+    --text-color:#111;
+    --white:#fff;
+    --footer:#112240;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", Times, serif;
+    background:var(--main-color);
+    color:var(--text-color);
+    line-height:1.7;
+}
+
+/* HEADER */
+header{
+    background:var(--main-color);
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+    border-bottom:3px solid var(--white);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h1{
+    color:var(--white);
+    font-size:2rem;
+    letter-spacing:2px;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+nav a{
+    color:var(--white);
+    text-decoration:none;
+    font-size:1rem;
+    transition:0.3s ease;
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* MAIN SECTION */
+section{
+    min-height:100vh;
+    padding:40px 20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+/* DIARY CARDS */
+.diary-entry{
+    background:var(--card-color);
+    border:2px solid #000;
+    border-radius:12px;
+    padding:25px;
+    width:100%;
+    max-width:900px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:transform 0.3s ease;
+}
+
+.diary-entry:hover{
+    transform:translateY(-5px);
+}
+
+.diary-entry h3{
+    font-size:1.5rem;
+    margin-bottom:12px;
+}
+
+.diary-entry p{
+    font-size:1.1rem;
+    text-align:justify;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:var(--footer);
+    color:var(--white);
+    border-top:3px solid #000;
+    font-size:0.9rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width:768px){
+
+    header{
+        padding:20px;
+        justify-content:center;
+        text-align:center;
+    }
+
+    header h1{
+        font-size:1.7rem;
+    }
+
+    nav{
+        justify-content:center;
+    }
+
+    .diary-entry{
+        padding:20px;
+    }
+
+    .diary-entry h3{
+        font-size:1.3rem;
+    }
+
+    .diary-entry p{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Diary</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="diary.html">Diary</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+
+    <div class="diary-entry">
+        <h3>𝕿𝖍𝖊 𝕾𝖊𝖓𝖙𝖎𝖒𝖊𝖓𝖙𝖆𝖑 & 𝕲𝖗𝖆𝖙𝖊𝖋𝖚𝖑</h3>
+
+        <p>
+            Looking back at Cheerdance Battle 2025, my heart is so full.
+            To my amazing groupmates: thank you for every late-night practice,
+            every bruise we laughed off, and for pushing me to be better.
+            We didn’t just build a routine — we built a family.
+            So proud of what we achieved on that floor!
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝕿𝖍𝖊 𝕴 𝕭𝖚𝖎𝖑𝖙 𝕾𝖔𝖒𝖊𝖙𝖍𝖎𝖓𝖌 𝕽𝖊𝖆𝖑</h3>
+
+        <p>
+            Stepping out of my AppDev comfort zone and into the world of hardware
+            programming for the first time! There’s something incredibly rewarding
+            about writing code that doesn't just live on a screen, but actually
+            interacts with the physical world.
+            Learning to manage registers and GPIO pins instead of just UI
+            components has been a steep but exciting learning curve.
+            The first time that LED blinked, I was hooked!
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝕿𝖍𝖊 𝕲𝖗𝖆𝖙𝖊𝖋𝖚𝖑 & 𝕽𝖊𝖋𝖑𝖊𝖈𝖙𝖎𝖛𝖊</h3>
+
+        <p>
+            Huge thanks to Sir A for an insightful session in our Accounting
+            class today! Dealing with ledgers and financial statements can be
+            overwhelming, but his way of breaking down complex concepts makes
+            the debits and credits finally click.
+            Slowly but surely mastering the language of business!
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝕿𝖍𝖊 "𝕲𝖗𝖎𝖓𝖉" 𝕻𝖊𝖗𝖘𝖕𝖊𝖈𝖙𝖎𝖛𝖊</h3>
+
+        <p>
+            They see the 5-minute routine, but they don’t see the weeks of
+            rehearsals that built it.
+            Rehearsing for the Cheerdance Battle has been an emotional
+            rollercoaster, but there’s no squad I’d rather be tired with.
+            We’re hitting our stunts, finding our rhythm, and becoming one
+            heartbeat. The battle is coming, and we’re ready to leave it all
+            on the mats.
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝖕𝖔𝖜𝖊𝖗</h3>
+
+        <p>
+            The calm before the storm is just us hitting the mats over and over
+            again until everything is perfect.
+            The bruises and the sweat are starting to pay off, and I can feel
+            the energy building up for the big day.
+            Let’s go, team!
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝖔𝖓𝖊 𝖋𝖔𝖗 𝖙𝖍𝖊 𝖙𝖊𝖆𝖒</h3>
+
+        <p>
+            We finally left it all on the floor, and the feeling is honestly
+            indescribable.
+            All those months of training led to those few minutes, and I
+            couldn’t be prouder of how we showed up.
+            Cheerdance Battle 2026 was definitely one for the books.
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝕳𝖆𝖗𝖉 𝖜𝖔𝖗𝖐 𝖙𝖊𝖆𝖒</h3>
+
+        <p>
+            Officially holding our certificate of accomplishment for the AppDev
+            project, and it feels so good.
+            All the late nights and endless bug fixing finally turned into
+            something tangible.
+            So proud of this team for pushing through the finish line.
+        </p>
+    </div>
+
+    <div class="diary-entry">
+        <h3>𝕬 𝖇𝖎𝖌 𝖂 𝖋𝖔𝖗 𝖙𝖍𝖊 𝖙𝖊𝖆𝖒</h3>
+
+        <p>
+            To the best AppDev partners I could have asked for: thank you for
+            all the hard work and late-night grinds we went through to finish
+            this project.
+            We faced so many bugs and challenges, but we never gave up.
+            Seeing the final result is such a win for all of us.
+            It was an honor building this with you guys, and I’m definitely
+            going to miss our sessions.
+            Good luck with your next goals, and I hope our paths cross again
+            in another project soon.
+            Keep coding and stay amazing.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 My Diary | All Rights Reserved
+</footer>
+
+</body>
+</html>
